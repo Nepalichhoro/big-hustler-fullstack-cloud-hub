@@ -29,7 +29,7 @@ cd terraform_docker_101
 
 ```
 
-# Terraform Phase I - PLAN
+# Terraform Phase I - Add configuration
 
 Create a file called main.tf and add configuration below
 
@@ -63,14 +63,15 @@ resource "docker_container" "nginx" {
 
 
 ```
-# Terraform Phase II - Initialize
+# Terraform Phase II and III  - Initialize and Plan
 
 In this phase, Terraform downloads a plugin called a provider that lets Terraform interact with Docker.
 
 
 ```bash
 
-terraform init 
+terraform init
+terraform plan
 
 ```
 - We should be able to see a folder .terraform with necessary plugins inside

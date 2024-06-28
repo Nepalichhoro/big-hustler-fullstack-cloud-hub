@@ -27,7 +27,7 @@ cd terraform_aws_101
 
 ```
 
-# Terraform Phase I - PLAN
+# Terraform Phase I - Add configuration
 
 Create a file called main.tf and add configuration below
 
@@ -61,12 +61,13 @@ resource "aws_instance" "app_server" {
 
 ```
 
-# Terraform Phase II - Initialize
+# Terraform Phase II and III  - Initialize and Plan
 In this phase, Terraform downloads a plugin called a provider that lets Terraform interact with AWS.
 
 ```bash 
 
 terraform init
+terraform plan
 
 ```
 
