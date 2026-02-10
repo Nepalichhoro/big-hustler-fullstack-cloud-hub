@@ -530,7 +530,7 @@ export default function App() {
                   * Here, it just gives the Autocomplete a bit of breathing room; it doesn"t affect the input"s behavior.
                  */
                 }
-                <Stack spacing={1}>
+                <Stack spacing={100}>
                    {
                       /** freeSolo lets the MUI Autocomplete accept values that aren’t in the options list. 
                        * Without it, the user can only pick from the provided options. With it, they can type any custom event group or value. */
