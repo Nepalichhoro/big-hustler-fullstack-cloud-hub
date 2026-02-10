@@ -501,7 +501,17 @@ export default function App() {
           </Box>
 
           <Box className="section">
-            <Typography variant="subtitle1">Add Alert Configuration</Typography>
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
+              gap={2}
+            >
+              <Typography variant="subtitle1">Add Alert Configuration</Typography>
+              <Typography variant="caption" color="text.secondary">
+                * enter a valid event group
+              </Typography>
+            </Box>
             <Grid container spacing={2} className="section-grid">
               <Grid item xs={12} md={4}>
                 <Field
