@@ -524,6 +524,12 @@ export default function App() {
                 />
               </Grid>
               <Grid item xs={12} md={4}>
+                {
+                  /**
+                  * Stack is a Material UI layout helper. It stacks its children vertically and inserts consistent spacing between them. 
+                  * Here, it just gives the Autocomplete a bit of breathing room; it doesn"t affect the input"s behavior.
+                 */
+                }
                 <Stack spacing={1}>
                   <Autocomplete
                     freeSolo
@@ -545,6 +551,10 @@ export default function App() {
                     getOptionLabel={(option) =>
                       typeof option === "string" ? option : option.label
                     }
+                    /**
+                     * renderInput is how you tell the Autocomplete what kind of text input to use for the user to type in.
+                     * Here we use a standard Material UI TextField, and we pass it the params that Autocomplete gives us to connect it properly.
+                     */
                     renderInput={(params) => (
                       <TextField
                         {...params}
