@@ -531,6 +531,10 @@ export default function App() {
                  */
                 }
                 <Stack spacing={1}>
+                   {
+                      /** freeSolo lets the MUI Autocomplete accept values that aren’t in the options list. 
+                       * Without it, the user can only pick from the provided options. With it, they can type any custom event group or value. */
+                    }
                   <Autocomplete
                     freeSolo
                     options={targetOptions}
